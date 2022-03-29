@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --l-grey: hsl(217, 12%, 63%);
+    --m-grey: hsl(216, 12%, 54%);
+    --d-blue: hsl(213, 19%, 18%);
+    --m-blue: hsl(212, 28%, 13%);
+    --very-blue: hsl(216, 12%, 8%);
+}
+
+body {
+
+    font-family: "Overpass", sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: var(--very-blue);
+}
+
+main {
+
+    width: 87%;
+    background: var(--m-blue);
+    padding: 1.3em;
+    border-radius: 10px;
+}
+
+.none {
+
+    display: none;
+}
+
+.star {
+
+    background: var(--d-blue);
+    display: inline-block;
+    padding: 0.5em 0.6em 0.3em 0.6em;
+    border-radius: 50px;
+}
+
+.star img {
+
+    width: 13px;
+}
+
+h2 {
+
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+p {
+
+    color: var(--m-grey);
+    font-size: 14px;
+    margin: 15px 0 25px 0;
+    line-height: 20px;
+}
+
+#radio-rating {
+
+    display: flex;
+    justify-content: center;
+}
+
+.radio-opt {
+
+    display: none;
+}
+
+label {
+
+    background: var(--d-blue);
+    margin: 0 0.6em;
+    color: var(--m-grey);
+    font-size: 12px;
+    padding: 0.750em 1.175em 0.750em 1.175em;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+label:hover {
+
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+
+    background: var(--l-grey);
+    color: var(--white);
+    
+}
+
+input[type=submit] {
+
+    margin-top: 3px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.8em 0;
+    border: none;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 400;
+    font-family: "Overpass";
+    letter-spacing: 2px;
+    font-size: 11px;
+    transition: .3s;
+}
+
+input[type=submit]:hover:not([disabled]) {
+
+    background: var(--white);
+    color: var(--orage);
+    cursor: pointer;
+}
+
+input[type=submit]:disabled {
+
+    filter: grayscale(100%);
+    cursor: default;
+}
+
+.after-feedback {
+
+    text-align: center;
+}
+
+.after-feedback img {
+
+    width: 115px;
+}
+
+#selected {
+
+    color: var(--orange);
+    background: var(--d-blue);
+    padding: 0.450em;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 145px;
+    margin: 18px auto 22px auto;
+    
+}
+
+h3 {
+
+    color: var(--white);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+
+        width: 32%;
+    }
+
+    label {
+
+        margin: 0 0.7em;
+        padding: 0.750em 1.125em 0.750em 1.125em;
+        font-size: 13px;
+    }
+}
