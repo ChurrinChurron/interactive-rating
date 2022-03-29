@@ -174,3 +174,11 @@ h3 {
         font-size: 13px;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    
+    main {
+        
+        width: 27%;
+    }
+}
